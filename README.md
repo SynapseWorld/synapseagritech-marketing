@@ -1,18 +1,35 @@
 # SynapseAgriTech — SaaS Marketing Site
 
-Marketing site for the poultry inventory/dispatch/farm-ops **software
-product itself** — not the Bagachima gavran chicken consumer brand
-(`bagachima-landing/`), a separate project with its own identity. This
-site's audience is other poultry/agri businesses evaluating the software
-as a purchase.
+Marketing site for SynapseAgriTech — poultry/agri inventory, dispatch,
+billing, shipment tracking, and farm-ops (IoT bird counting, egg
+collection) SaaS. This markets the **software product itself**, for
+other poultry/agri businesses evaluating it as a purchase — a separate
+brand/identity from any consumer-facing product built with it.
 
 Plain static HTML/CSS/JS, no build step, no framework — open any `.html`
 file directly or serve the folder with any static file server.
 
-## Design direction
+Originally built inside the product's monorepo, then split out into this
+standalone repo (full history preserved via `git subtree split`) once the
+design direction was settled.
 
-Blends four influences rather than picking one:
-- **AgriTech Modern** base — warm greens/earth tones, not corporate blue
+## Branches
+
+- **`main`** — the active design: dark, futuristic (neon green/cyan/
+  violet accents on near-black, glassmorphism, Space Grotesk type). This
+  is the current direction.
+- **`warm-agritech`** — the original warm AgriTech Modern design (warm
+  greens/earth tones, light background), kept for reference/comparison.
+  Not being developed further unless you decide to go back to it.
+
+## Design direction (current — `main`)
+
+Dark and tech-forward rather than the warm AgriTech look this started
+from:
+- **Dark/neon base** — near-black background, glowing green/cyan/violet
+  accents instead of warm greens/earth tones
+- **Glassmorphism** — translucent, backdrop-blurred cards and mockup
+  frames rather than flat light panels
 - **Data-Dashboard-First** hero/feature visuals — styled dashboard
   mockups (browser-chrome and phone-frame), not generic illustrations
 - **Trust & Scale** structure — grid-based layout, specific capability
@@ -48,9 +65,18 @@ duplicate feature/tier copy directly into either page's HTML.
 ## Local preview
 
 ```bash
-python -m http.server 8086 --directory poultry-saas-marketing
+python -m http.server 8086
 ```
-Or via this repo's `.claude/launch.json` entry (`poultry-saas-marketing`).
+Or via this repo's `.claude/launch.json` entry (`synapseagritech-marketing`).
+
+## Logo
+
+Custom inline SVG (not an image file) — a side-profile chicken wearing a
+single-lens monocle, with a curved beak and two feather tufts at the back
+of the head. Recolored per-branch: neon tri-color (green/cyan/violet) on
+`main`, warm tones on `warm-agritech`. Also embedded as the favicon (data
+URI) on every page. Edit the inline `<svg>` in each `.html` file's
+`.brand-mark` span directly — there's no separate logo asset file.
 
 ## Placeholder content — needs your input before launch
 
@@ -89,3 +115,6 @@ rather than guessed at:
   terminology, especially tier names and the exact capability wording.
 - **Pricing** — every tier shows "Contact us" per instruction; no numbers
   were guessed at.
+- **GitHub home** — currently under the `onkars81` account as a stopgap;
+  move to its intended dedicated account/org once that's set up
+  (`git remote set-url origin <new-url>`, then push).

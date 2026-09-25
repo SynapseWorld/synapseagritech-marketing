@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "synapseagritech-marketing",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8086"],
+      "port": 8086
+    }
+  ]
+}
