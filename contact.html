@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact & Request a Demo — Poultry Ops</title>
+<meta name="description" content="Get in touch or request a live demo of Poultry Ops — inventory, dispatch, billing, and farm operations software." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="contact">
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand"><span class="brand-mark">🐔</span>Poultry Ops</a>
+    <nav class="nav-links">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="features.html" data-page="features">Features</a>
+      <a href="product-tour.html" data-page="tour">Product Tour</a>
+      <a href="pricing.html" data-page="pricing">Pricing</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-secondary">Request Demo</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom: 0;">
+    <div class="container section-head">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's talk about your operation</h1>
+      <p>Whether you want a live demo or just have a question about how this fits your setup, tell us a bit about your business and we'll get back to you.</p>
+    </div>
+  </section>
+
+  <section id="demo-form">
+    <div class="container contact-layout">
+
+      <div class="form-card">
+        <div id="form-success" class="form-success">Thanks — we've got your message and will be in touch shortly.</div>
+        <form id="contact-form">
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="field">
+              <label for="company">Company / farm name</label>
+              <input type="text" id="company" name="company" required />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="interest">What are you interested in?</label>
+            <select id="interest" name="interest">
+              <option value="demo">Requesting a live demo</option>
+              <option value="pricing">A question about pricing</option>
+              <option value="general">General inquiry</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Tell us about your operation</label>
+            <textarea id="message" name="message" placeholder="How many locations, roughly how much stock you move, whether farm operations apply — whatever's useful."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send</button>
+          <p class="form-note">Submission handling is a placeholder for now — this form doesn't send anywhere real yet. Wire it up to a backend endpoint or a form service before launch.</p>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div>
+            <h3>Email us</h3>
+            <p>hello@example.com <span class="badge-flag">placeholder</span></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <h3>Call us</h3>
+            <p>+91 00000 00000 <span class="badge-flag">placeholder</span></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">⏱️</div>
+          <div>
+            <h3>What happens next</h3>
+            <p>We'll reach out within a business day or two to set up a time — for a demo request, we'll walk through the dashboards live and answer whatever's specific to your setup.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark">🐔</span>Poultry Ops</a>
+        <p>Inventory, dispatch, billing, and farm operations software built for poultry and agri businesses.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="product-tour.html">Product Tour</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Request a Demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get the app</h4>
+        <ul>
+          <li><a href="product-tour.html">Google Play (pending review)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Poultry Ops. All rights reserved.</span>
+      <span>Placeholder brand name — swap before launch.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/contact.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
