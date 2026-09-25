@@ -1,4 +1,4 @@
-# Poultry Ops — SaaS Marketing Site
+# SynapseAgriTech — SaaS Marketing Site
 
 Marketing site for the poultry inventory/dispatch/farm-ops **software
 product itself** — not the Bagachima gavran chicken consumer brand
@@ -57,8 +57,11 @@ Or via this repo's `.claude/launch.json` entry (`poultry-saas-marketing`).
 Everything below was deliberately left as a clearly-marked placeholder
 rather than guessed at:
 
-- **Product/brand name** — currently "Poultry Ops" throughout (nav,
-  footer, page titles). Needs a real name.
+- **Domain registration** — brand name is decided: SynapseAgriTech.
+  Primary domain is `SynapseAgriTech.com`; confirm it's actually
+  registered, and secure the alternates called out in the footer
+  (`SynapseAgri.tech`, `SynapseAgriTech.ai`, `SynapseAgriTech.io`) before
+  someone else does.
 - **Dashboard screenshots** — every visual on Home, Features, and
   Product Tour is a styled HTML/CSS mockup resembling the real dashboards
   (inventory, live shipment map, farm-ops bird count), not an actual
