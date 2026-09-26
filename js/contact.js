@@ -1,8 +1,7 @@
-// Real submission — POSTs to the AgriFlo backend's public
-// POST /api/leads endpoint (see poultry-inventory-backend's LeadController
-// and SecurityConfig: that one route is unauthenticated + CORS-enabled
-// specifically for this site, everything else on that API needs a login).
-const LEADS_API_URL = "https://backend-production-531cc.up.railway.app/api/leads";
+// Real submission — POSTs to AgriFlo's own independent backend
+// (agriflo-backend, deployed separately on Render — see its repo's
+// LeadController). Public, CORS-enabled for this site's domains.
+const LEADS_API_URL = "https://agriflo-backend.onrender.com/api/leads";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
