@@ -321,10 +321,22 @@ section { padding: 72px 0; }
   background: var(--white);
 }
 .logo-slot-customer {
-  border: 1.5px solid var(--green-500);
-  color: var(--green-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1.5px solid #f2c230;
+  background: linear-gradient(135deg, rgba(138, 31, 19, 0.18), rgba(242, 194, 48, 0.1));
+  color: #f2c230;
   font-size: 0.95rem;
   font-weight: 700;
+}
+.logo-slot-customer img {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 /* ---------- Mockup frames (Data-Dashboard-First) ---------- */
