@@ -1,6 +1,6 @@
-# SynapseAgriTech — SaaS Marketing Site
+# AgriFlo — SaaS Marketing Site
 
-Marketing site for SynapseAgriTech — poultry/agri inventory, dispatch,
+Marketing site for AgriFlo — poultry/agri inventory, dispatch,
 billing, shipment tracking, and farm-ops (IoT bird counting, egg
 collection) SaaS. This markets the **software product itself**, for
 other poultry/agri businesses evaluating it as a purchase — a separate
@@ -83,11 +83,6 @@ URI) on every page. Edit the inline `<svg>` in each `.html` file's
 Everything below was deliberately left as a clearly-marked placeholder
 rather than guessed at:
 
-- **Domain registration** — brand name is decided: SynapseAgriTech.
-  Primary domain is `SynapseAgriTech.com`; confirm it's actually
-  registered, and secure the alternates called out in the footer
-  (`SynapseAgri.tech`, `SynapseAgriTech.ai`, `SynapseAgriTech.io`) before
-  someone else does.
 - **Dashboard screenshots** — every visual on Home, Features, and
   Product Tour is a styled HTML/CSS mockup resembling the real dashboards
   (inventory, live shipment map, farm-ops bird count), not an actual
@@ -98,13 +93,8 @@ rather than guessed at:
   Store review isn't done. Swap in the real listing URL once approved.
 - **"See It In Action" video CTA** (`product-tour.html`) — disabled/
   styled as coming-soon; wire it up once a walkthrough video exists.
-- **Contact email/phone** (`contact.html`) — marked with a visible
-  "placeholder" badge; replace with real values.
-- **Contact form submission** — `js/contact.js` only shows a fake success
-  message; it doesn't send anywhere. Wire it to a real backend endpoint
-  or a form service (Formspree, etc.) before launch.
-- **Social proof** (`index.html`) — dashed placeholder logo slots, no
-  real customer logos or testimonials yet.
+- **Social proof** (`index.html`) — Bagachima is featured as the first
+  real customer; the remaining logo slots are still dashed placeholders.
 - **Stat strip** (`index.html`) — deliberately phrased as capability
   claims ("Unlimited SKUs tracked," "Multi-site by design") rather than
   fabricated customer usage numbers, since no real figures exist yet —
@@ -115,6 +105,11 @@ rather than guessed at:
   terminology, especially tier names and the exact capability wording.
 - **Pricing** — every tier shows "Contact us" per instruction; no numbers
   were guessed at.
-- **GitHub home** — currently under the `onkars81` account as a stopgap;
-  move to its intended dedicated account/org once that's set up
-  (`git remote set-url origin <new-url>`, then push).
+
+## Domain & hosting
+
+Live at [agriflo.in](https://agriflo.in) (also `agriflo.co.in`), deployed
+via Cloudflare Pages, auto-deploying from this repo's `main` branch
+(hosted under the `SynapseWorld` GitHub account). Contact form
+(`js/contact.js`) posts to the AgriFlo product backend's public
+`/api/leads` endpoint.

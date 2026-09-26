@@ -1,4 +1,4 @@
-// Real submission — POSTs to the SynapseAgriTech backend's public
+// Real submission — POSTs to the AgriFlo backend's public
 // POST /api/leads endpoint (see poultry-inventory-backend's LeadController
 // and SecurityConfig: that one route is unauthenticated + CORS-enabled
 // specifically for this site, everything else on that API needs a login).
