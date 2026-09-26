@@ -320,6 +320,12 @@ section { padding: 72px 0; }
   font-weight: 600;
   background: var(--white);
 }
+.logo-slot-customer {
+  border: 1.5px solid var(--green-500);
+  color: var(--green-500);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
 
 /* ---------- Mockup frames (Data-Dashboard-First) ---------- */
 .browser-frame {
